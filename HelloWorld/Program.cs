@@ -14,6 +14,8 @@ namespace HelloWorld
 
             // decalres var "animals" as a string with animals below
             var animals = new string[] { "Triceratops", "Gorilla", "Corgi", "Toucan" };
+            Random rand = new Random(); // new random string
+            int index = rand.Next(animals.Length); // random selection of animals that fulfill earlier conditional
 
             // Console.ReadLine // 
             // Creates new string equal to 'name'
@@ -21,7 +23,7 @@ namespace HelloWorld
             // declares that 'name' is eaqual to the user input
             // Console prints greeting and uses interpelation of 'name' to print the user entered name
             // While loops when the name is equal to name, then do not repeat 
-            // ahsdfkjhasdfkj
+
             string name;
             
             do
@@ -42,13 +44,16 @@ namespace HelloWorld
                 }
             }
 
+            // Asks user what their favorite color is and uses sets the FavColor var equal to the user input
+            // Then it asks what the user if they would like their favColor of a random animal from the variable on line 16.
+            // Line 17 and 18 are needed to help generate a random index from the variable holding the strings of the animals.
             string favColor;
 
              do
             {
                 Console.WriteLine($"{name}, what is your favorite color?");
                 favColor = Console.ReadLine();
-                Console.WriteLine($"Would you like a {favColor} Triceritops?");
+                Console.WriteLine($"Would you like a {favColor} {animals[index]}?");
 
             } while (favColor != favColor);
 
