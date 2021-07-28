@@ -21,6 +21,7 @@ namespace HelloWorld
             // declares that 'name' is eaqual to the user input
             // Console prints greeting and uses interpelation of 'name' to print the user entered name
             // While loops when the name is equal to name, then do not repeat 
+            // ahsdfkjhasdfkj
             string name;
             
             do
